@@ -31,7 +31,8 @@ class SiteUrl {
 			WP_CLI::error( "A site with ID {$site_id} does not exist" );
 		}
 
-		WP_CLI::line( $site->siteurl );
+		// trailing-slash it, as URLs ends always with a trailing slash in context of the wp_blogs table
+		WP_CLI::line( trailingslashit( $site->siteurl ) );
 		exit( 0 );
 	}
 
@@ -72,7 +73,7 @@ class SiteUrl {
 		$path = isset( $url_components[ 'path' ] )
 			? trailingslashit(  $url_components[ 'path' ] )
 			: '/';
-		
+
 		// WP core does not accept ports in the URL so we don't too
 		$site_details             = get_object_vars( $site );
 		$site_details[ 'domain' ] = $host;
