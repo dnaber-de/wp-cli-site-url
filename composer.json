@@ -1,6 +1,6 @@
 {
 	"name": "inpsyde/wp-cli-site-url",
-	"description": "Provides a commandline interface to multisite site URLs",
+	"description": "Provides a commandline interface to WordPress multisite site URLs using WP-CLI",
 	"license": "MIT",
 	"type": "wordpress-plugin",
 	"autoload": {
