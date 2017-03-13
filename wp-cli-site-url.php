@@ -12,6 +12,7 @@
 namespace WpCliSiteUrl;
 
 use WP_CLI;
+use WpCliSiteUrl\WpCli\SiteUrl;
 
 const VERSION = 'dev-master';
 
@@ -30,7 +31,7 @@ function init() {
 	$autoload = __DIR__ . '/vendor/autoload.php';
 	is_readable( $autoload ) and require_once $autoload;
 
-	WP_CLI::add_command( WpCli\SiteUrl::COMMAND, WpCli\SiteUrl::class );
+	WP_CLI::add_command( SiteUrl::COMMAND, new SiteUrl() );
 }
 
 /**
