@@ -11,8 +11,7 @@
 
 namespace WpCliSiteUrl;
 
-use
-	WP_CLI;
+use WP_CLI;
 
 add_action( 'wp_loaded', __NAMESPACE__ . '\init' );
 

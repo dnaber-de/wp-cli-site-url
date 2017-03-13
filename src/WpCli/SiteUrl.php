@@ -2,8 +2,7 @@
 
 namespace WpCliSiteUrl\WpCli;
 
-use
-	WP_CLI;
+use WP_CLI;
 
 /**
  * Retrieve and update a URL of a site in the network. Updating the URL
