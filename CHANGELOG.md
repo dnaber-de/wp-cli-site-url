@@ -19,6 +19,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Command `wp site-url get <ID>`
 * Command `wp site-url update <ID> <URL>`
 
-[Unreleased]: http://github.com/VENDOR/PROJECT/compare/2.0.0...master
+[Unreleased]: http://github.com//inpsyde/wp-cli-site-url/compare/2.0.0...master
 [2.0.0]: https://github.com/inpsyde/wp-cli-site-url/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/inpsyde/wp-cli-site-url/tree/1.0.0
