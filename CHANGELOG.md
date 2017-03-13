@@ -6,6 +6,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+* Internal: codestyling
+* Internal: Pass instance to `WP_CLI::add_command()` instead of class name
+
 ## [2.0.0]
 ### Changed
 * Set dependency version of `wp-cli/wp-cli` to `^1.1`
