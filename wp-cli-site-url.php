@@ -3,7 +3,7 @@
 /**
  * Plugin Name: WP-CLI Site URL
  * Description: Provides WP-CLI command for editing a site URL. See <code>$ wp site_url</code> for command descriptions.
- * Version:     2.0.0
+ * Version:     dev-master
  * Author:      Inpsyde GmbH
  * Author URL:  http://inpsyde.com
  * Network:     true
@@ -13,7 +13,7 @@ namespace WpCliSiteUrl;
 
 use WP_CLI;
 
-const VERSION = '2.0.0';
+const VERSION = 'dev-master';
 
 add_action( 'wp_loaded', __NAMESPACE__ . '\init' );
 
@@ -28,8 +28,7 @@ function init() {
 		return;
 
 	$autoload = __DIR__ . '/vendor/autoload.php';
-	if ( file_exists( $autoload ) && is_readable( $autoload ) )
-		require_once $autoload;
+	is_readable( $autoload ) and require_once $autoload;
 
 	WP_CLI::add_command( WpCli\SiteUrl::COMMAND, WpCli\SiteUrl::class );
 }
