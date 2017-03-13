@@ -13,6 +13,8 @@ namespace WpCliSiteUrl;
 
 use WP_CLI;
 
+const VERSION = '1.0.0';
+
 add_action( 'wp_loaded', __NAMESPACE__ . '\init' );
 
 /**
