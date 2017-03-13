@@ -1,29 +1,29 @@
 {
-	"name": "inpsyde/wp-cli-site-url",
-	"description": "Provides a commandline interface to WordPress multisite site URLs using WP-CLI",
-	"license": "MIT",
-	"type": "wordpress-plugin",
-	"autoload": {
-		"psr-4": {
-			"WpCliSiteUrl\\": "src/"
-		}
-	},
-	"require": {
-		"php": ">=5.5.0",
-		"johnpbloch/wordpress": ">=4.1.0",
-		"wp-cli/wp-cli": "~0.23"
-	},
-	"authors": [
-		{
-			"name": "Inpsyde GmbH",
-			"role": "company",
-			"homepage": "http://inpsyde.com"
-		},
-		{
-			"name": "David Naber",
-			"role": "developer",
-			"email": "d.naber@inpsyde.com",
-			"homepage": "https://dnaber.de"
-		}
-	]
+    "name": "inpsyde/wp-cli-site-url",
+    "description": "Provides a commandline interface to WordPress multisite site URLs using WP-CLI",
+    "license": "MIT",
+    "type": "wordpress-plugin",
+    "autoload": {
+        "psr-4": {
+            "WpCliSiteUrl\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "johnpbloch/wordpress": ">=4.1.0",
+        "wp-cli/wp-cli": "~0.23"
+    },
+    "authors": [
+        {
+            "name": "Inpsyde GmbH",
+            "role": "company",
+            "homepage": "http://inpsyde.com"
+        },
+        {
+            "name": "David Naber",
+            "role": "developer",
+            "email": "d.naber@inpsyde.com",
+            "homepage": "https://dnaber.de"
+        }
+    ]
 }
