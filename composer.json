@@ -9,9 +9,11 @@
         }
     },
     "require": {
-        "php": ">=5.5.0",
-        "johnpbloch/wordpress": ">=4.1.0",
-        "wp-cli/wp-cli": "^1.1"
+        "php": ">=5.5.0"
+    },
+    "suggests": {
+        "wp-cli/wp-cli": "Commandline interface for WordPress",
+        "johnpbloch/wordpress": "WordPress core package"
     },
     "authors": [
         {

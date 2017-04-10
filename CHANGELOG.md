@@ -6,6 +6,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Breaking changes
+* Remove `johnpbloch/wordpress` and `wp-cli/wp-cli` as dependencies as WP-CLI depends on Symfony 2 components which conflicts with many other tools that requires Symfony 3 components
+ 
 ### Changed
 * Internal: codestyling
 * Internal: Pass instance to `WP_CLI::add_command()` instead of class name
