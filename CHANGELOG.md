@@ -6,6 +6,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+
+## [3.0.0]
+
 ### Breaking changes
 * Remove `johnpbloch/wordpress` and `wp-cli/wp-cli` as dependencies as WP-CLI depends on Symfony 2 components which conflicts with many other tools that requires Symfony 3 components
  
@@ -22,6 +25,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Command `wp site-url get <ID>`
 * Command `wp site-url update <ID> <URL>`
 
-[Unreleased]: http://github.com//inpsyde/wp-cli-site-url/compare/2.0.0...master
+[Unreleased]: http://github.com/inpsyde/wp-cli-site-url/compare/3.0.0...master
+[3.0.0]: https://github.com/inpsyde/wp-cli-site-url/compare/2.0.0...3.0.0
 [2.0.0]: https://github.com/inpsyde/wp-cli-site-url/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/inpsyde/wp-cli-site-url/tree/1.0.0
