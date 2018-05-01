@@ -50,8 +50,8 @@ class SiteUrl {
 		if ( ! $site ) {
 			WP_CLI::error( "A site with ID {$site_id} does not exist" );
 		}
-		if ( is_main_site( $site_id ) ) {
-			WP_CLI::error( "The given site is the main site of the network. This feature does not support updating the main site URL" );
+		if ( !isset($assoc_args['force']) && is_main_site( $site_id ) ) {
+			WP_CLI::error( "The given site is the main site of the network. Please use --force argument if you know what you're doing." );
 		}
 		$new_url = $args[ 1 ];
 		if ( ! filter_var( $new_url, FILTER_VALIDATE_URL ) ) {
