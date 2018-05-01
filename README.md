@@ -28,7 +28,7 @@ The team at [Inpsyde](https://inpsyde.com) is engineering the Web since 2006.
 
 ## License
 
-Good news, this plugin is free for everyone! Since it's released under the [{{license}} License](LICENSE) you can use it free of charge on your personal or commercial website.
+Good news, this plugin is free for everyone! Since it's released under the MIT License. You can use it free of charge on your personal or commercial website.
 
 ## Contributing
 
